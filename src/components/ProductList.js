@@ -8,13 +8,13 @@ const ProductList = ({ products }) => {
         {products.map((product) => (
           <div
             key={product.id}
-            className="col-12 col-sm-6 col-md-4 col-lg-4 d-flex justify-content-center"
+            className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch"
           >
             <Link
               to={`/product/${product.id}`}
-              className="text-decoration-none text-dark"
+              className="text-decoration-none text-dark w-100"
             >
-              <div className="card product-card" style={{"height":"350px","width":"15rem"}}>
+              <div className="card product-card h-100"> {/* Use h-100 to ensure same height */}
                 <img
                   src={product.image}
                   className="card-img-top"
@@ -22,7 +22,7 @@ const ProductList = ({ products }) => {
                   style={{ height: "200px", objectFit: "cover" }}
                   loading="lazy"
                 />
-                <div className="card-body text-center">
+                <div className="card-body text-center d-flex flex-column justify-content-between">
                   <h6 className="card-title">{product.title}</h6>
                   <p className="card-text">${product.price}</p>
                 </div>
