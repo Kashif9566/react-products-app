@@ -44,7 +44,7 @@ const FilterSidebar = ({ categories }) => {
 
         {/* Price Range */}
         <div className="mb-3">
-          <label className="form-label">Min Price</label>
+          <label className="form-label">Min Price ($)</label>
           <input
             type="number"
             name="min"
@@ -56,7 +56,7 @@ const FilterSidebar = ({ categories }) => {
         </div>
 
         <div className="mb-3">
-          <label className="form-label">Max Price</label>
+          <label className="form-label">Max Price ($)</label>
           <input
             type="number"
             name="max"
