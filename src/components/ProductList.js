@@ -14,7 +14,7 @@ const ProductList = ({ products }) => {
               to={`/product/${product.id}`}
               className="text-decoration-none text-dark w-100"
             >
-              <div className="card product-card h-100"> {/* Use h-100 to ensure same height */}
+              <div className="card product-card h-100">
                 <img
                   src={product.image}
                   className="card-img-top"
